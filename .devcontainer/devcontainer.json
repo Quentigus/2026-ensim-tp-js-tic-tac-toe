@@ -1,0 +1,28 @@
+{
+    "name": "Tic Tac Toe",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:1",
+    "customizations": {
+        "codespaces": {
+            "openFiles": ["index.html", "styles.css"]
+        },
+        "vscode": {
+            "extensions": ["ritwickdey.LiveServer", "esbenp.prettier-vscode", "PKief.material-icon-theme"],
+            "settings": {
+                "liveServer.settings.ChromeDebuggingAttachment": true,
+                "liveServer.settings.port": 4200,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.formatOnSave": true,
+                "editor.formatOnSaveMode": "file",
+                "files.autoSave": "afterDelay",
+                "editor.tabSize": 4
+            }
+        }
+    },
+    "portsAttributes": {
+        "4200": {
+            "label": "Application",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "forwardPorts": [4200]
+}
